@@ -943,15 +943,3 @@ diff --unified -rN a/libgcc/configure.ac b/libgcc/configure.ac
  esac
  
  case ${host} in
-diff --unified -rN a/libgcc/crtstuff.c b/libgcc/crtstuff.c
---- a/libgcc/crtstuff.c	2018-01-03 11:03:58.000000000 +0100
-+++ b/libgcc/crtstuff.c	2019-04-11 11:48:30.968991312 +0200
-@@ -47,7 +47,7 @@
- 
- /* Target machine header files require this define. */
- #define IN_LIBGCC2
--
-+#define USED_FOR_TARGET
- /* FIXME: Including auto-host is incorrect, but until we have
-    identified the set of defines that need to go into auto-target.h,
-    this will have to do.  */
